@@ -23,30 +23,30 @@
             //     background:$primary;
 
             // }
-            &:after {
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 100%;
-                height: 100%;
-                z-index: -1;
-                background: rgba($primary, $background-opacity);
-            }
+            // &:after {
+            //     content: '';
+            //     position: absolute;
+            //     top: 0;
+            //     right: 0;
+            //     width: 100%;
+            //     height: 100%;
+            //     z-index: -1;
+            //     background: rgba($primary, $background-opacity);
+            // }
         }
         
     }
 }
 
-// // Set Text Color
-// @function set-text-color($color) {
-//     @if (lightness($color) > 40) {
-//         @return #000;
-//     }
-//     @else {
-//         @return #fff;
-//     }
-// }
+// Set Text Color
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+        @return #404040;
+    }
+    @else {
+        @return #a3a0a0;
+    }
+}
 
 // // Media Query Mixins
 // @mixin mediaSm {

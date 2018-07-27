@@ -6,7 +6,7 @@
 body {
     @include background;
     // color:$primary;
-    color: white;
+    color:set-text-color($preprimary);
     height: 100%;
     margin: 0;
     font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
@@ -16,6 +16,7 @@ h1,h2,h3{
     margin: 0;
     font-weight: 400;
     &.lg-heading{
+        color:$primary;
         font-size:3.5rem;
         font-weight: 900;
         text-transform: uppercase;
@@ -24,12 +25,12 @@ h1,h2,h3{
         margin-bottom: 1.5rem;
         font-style:italic;
         padding: 0.2rem 1rem;
-        color:$secondary;
+        color:$preprimary;
   line-height: 2.5;
     }
 }
 a{
-    color:white;
+    color:set-text-color($primary);
     text-decoration: none;
 
 }
@@ -49,14 +50,14 @@ main{
 
 .icons {
  margin-top:2rem;
-
+ 
  a{
      padding:1rem;
        -webkit-transition: 1s ease;
        -moz-transition: 1s ease;
        -o-transition: 1s ease;
        transition: 1s ease;
-        // color: $primary;
+        color: $primary;
      &:hover{
          &:nth-child(1){
          color:$tweeter;
