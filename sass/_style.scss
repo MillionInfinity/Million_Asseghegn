@@ -58,7 +58,8 @@ main{
        transition: 1s ease;
         // color: $primary;
      &:hover{
-         color:$secondary;
+         &:nth-child(1){
+         color:$tweeter;
          @include easeOut();
         -webkit-transform: scale(1.25);
         -moz-transform: scale(1.25);
@@ -68,6 +69,31 @@ main{
         -moz-transform-origin: top right;
         -o-transform-origin: top right;
         transform-origin: top right;
+         }
+         &:nth-child(2){
+            color:$linkedIn;
+             @include easeOut();
+             -webkit-transform: scale(1.25);
+             -moz-transform: scale(1.25);
+             -o-transform: scale(1.25);
+             transform: scale(1.25);
+             -webkit-transform-origin: top right;
+             -moz-transform-origin: top right;
+             -o-transform-origin: top right;
+             transform-origin: top right;
+         }
+          &:nth-child(3) {
+              color: $github;
+              @include easeOut();
+              -webkit-transform: scale(1.25);
+              -moz-transform: scale(1.25);
+              -o-transform: scale(1.25);
+              transform: scale(1.25);
+              -webkit-transform-origin: top right;
+              -moz-transform-origin: top right;
+              -o-transform-origin: top right;
+              transform-origin: top right;
+          }
      }
  }
 }
