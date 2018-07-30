@@ -1,3 +1,4 @@
+"use strict";
 console.log('this is Million');
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
