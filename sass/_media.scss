@@ -1,0 +1,289 @@
+@import "mixin.scss";
+// Widescreens
+@include mediaXl {
+body {
+    @include background; // color:$primary;
+    color: set-text-color($preprimary);
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: 400;
+    &.lg-heading {
+        color: $primary;
+        font-size: 3.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    &.sm-heading {
+        margin-bottom: 1.5rem;
+        font-style: italic;
+        padding: 0.2rem 1rem;
+        color: $preprimary;
+        line-height: 2.5;
+    }
+}
+
+a {
+    color: set-text-color($primary);
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.text-secondary {
+    // color: $secondary;
+    // text-transform: lowercase;
+    font-weight: 400;
+}
+
+main {
+    padding: 4rem;
+    height: 100%;
+    .icons {
+        margin-top: 2rem;
+        a {
+            padding: 1rem;
+            -webkit-transition: 1s ease;
+            -moz-transition: 1s ease;
+            -o-transition: 1s ease;
+            transition: 1s ease;
+            color: $primary;
+            &:hover {
+                &:nth-child(1) {
+                    color: $tweeter;
+                    @include easeOut();
+                    -webkit-transform: scale(1.25);
+                    -moz-transform: scale(1.25);
+                    -o-transform: scale(1.25);
+                    transform: scale(1.25);
+                    -webkit-transform-origin: top right;
+                    -moz-transform-origin: top right;
+                    -o-transform-origin: top right;
+                    transform-origin: top right;
+                }
+                &:nth-child(2) {
+                    color: $linkedIn;
+                    @include easeOut();
+                    -webkit-transform: scale(1.25);
+                    -moz-transform: scale(1.25);
+                    -o-transform: scale(1.25);
+                    transform: scale(1.25);
+                    -webkit-transform-origin: top right;
+                    -moz-transform-origin: top right;
+                    -o-transform-origin: top right;
+                    transform-origin: top right;
+                }
+                &:nth-child(3) {
+                    color: $github;
+                    @include easeOut();
+                    -webkit-transform: scale(1.25);
+                    -moz-transform: scale(1.25);
+                    -o-transform: scale(1.25);
+                    transform: scale(1.25);
+                    -webkit-transform-origin: top right;
+                    -moz-transform-origin: top right;
+                    -o-transform-origin: top right;
+                    transform-origin: top right;
+                }
+            }
+        }
+    }
+    &#home {
+        overflow: hidden;
+        h1 {
+            margin-top: 45.7vh;
+            margin-left: 55.2vw;
+            text-align: center;
+        }
+        h2 {
+            margin-left: 62vw;
+        }
+        .icons {
+            margin-left: 69vw;
+        }
+    }
+}
+
+
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+// Desktops & Laptops
+@include mediaLg {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+body {
+    @include background;
+    background: $primary;
+    color: set-text-color($primary);
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    line-height: 1.5;
+}
+
+// Headings
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: 400;
+    &.lg-heading {
+        font-size: 5rem;
+       font-weight: 700;
+    }
+    &.sm-heading {
+        color:white;
+        position:absolute;
+        left:84px;
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        // margin-bottom: 2rem;
+        // padding: 0.2rem 1rem;
+        background: rgba(lighten($primary, 2), 0.7);
+    }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.text-secondary {
+    color: $secondary;
+}
+
+main {
+    padding: 4rem; // height: 100%;
+    min-height: calc(100vh - 60px);
+    .icons {
+        margin-top: 4.8rem;
+        //  background: $primary;
+      a{
+          padding:1rem;
+            -webkit-transition: 1s ease;
+            -moz-transition: 1s ease;
+            -o-transition: 1s ease;
+            transition: 1s ease;
+            
+          &:hover{
+              &:nth-child(1){
+              color:$tweeter;
+              @include easeOut();
+             -webkit-transform: scale(1.25);
+             -moz-transform: scale(1.25);
+             -o-transform: scale(1.25);
+             transform: scale(1.25);
+             -webkit-transform-origin: top right;
+             -moz-transform-origin: top right;
+             -o-transform-origin: top right;
+             transform-origin: top right;
+              }
+              &:nth-child(2){
+                 color:$linkedIn;
+                  @include easeOut();
+                  -webkit-transform: scale(1.25);
+                  -moz-transform: scale(1.25);
+                  -o-transform: scale(1.25);
+                  transform: scale(1.25);
+                  -webkit-transform-origin: top right;
+                  -moz-transform-origin: top right;
+                  -o-transform-origin: top right;
+                  transform-origin: top right;
+              }
+               &:nth-child(3) {
+                   color: $github;
+                   @include easeOut();
+                   -webkit-transform: scale(1.25);
+                   -moz-transform: scale(1.25);
+                   -o-transform: scale(1.25);
+                   transform: scale(1.25);
+                   -webkit-transform-origin: top right;
+                   -moz-transform-origin: top right;
+                   -o-transform-origin: top right;
+                   transform-origin: top right;
+               }
+          }
+        }
+    }
+    &#home {
+        overflow: hidden;
+        h1 {
+            margin-top: 18vh;
+        }
+    }
+}
+
+    
+}
+
+// Tablets & Small Laptops
+@include mediaMd {
+  main {
+      align-items: center;
+      text-align: center;
+      .lg-heading {
+          line-height: 1;
+          margin-bottom: 1rem;
+      }
+  }
+    ul.menu-nav,
+    div.menu-branding {
+        float: none;
+        width: 100%;
+        min-height: 0;
+        &.show {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    .menu-nav {
+        height: 75vh;
+        transform: translate3d(-100%, 0, 0);
+        font-size: 24px;
+    }
+    .menu-branding {
+        height: 25vh;
+        transform: translate3d(100%, 0, 0);
+        .logo {
+            background: url('../img/2019.png');
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .about-info {
+        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+        grid-template-columns: 1fr;
+    }
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// Smartphones
+@include mediaSm {
+    main#home h1 {
+        margin-top: 144vh;
+    }
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}

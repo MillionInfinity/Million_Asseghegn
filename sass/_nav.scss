@@ -10,11 +10,14 @@
     @include easeOut;
     
         &.close{
-        transform: rotate(360deg)    ;
-        -webkit-transform: rotate(360deg)    ;
-        -moz-transform: rotate(360deg)    ;
-        -ms-transform: rotate(360deg)    ;
-        -o-transform: rotate(360deg)    ;
+       zoom:355%;
+        transform: rotate(360deg)   ;
+        -webkit-transform: rotate( 360deg)   ;
+        -moz-transform: rotate( 360deg)   ;
+        -ms-transform: rotate( 360deg)   ;
+        -o-transform: rotate( 360deg)   ;
+        right:20.5vw;
+        top:10.5vh;
 }
 }
 .menu{
@@ -48,23 +51,24 @@
          }
 }
 &-branding{
-    background: $primary;
+    background: white;
     transform:translate3d(0, 100%, 0);
     @include easeOut;
     &.show{
         transform:translate3d(0, 0, 0)    ;
       
 }
-.portrait{
-    width:250px;
-    height: 250px;
-    background:$primary;
-    border-radius:50%;
-    -webkit-border-radius:50%;
-    -moz-border-radius:50%;
-    -ms-border-radius:50%;
-    -o-border-radius:50%;
-}
+
+// .portrait{
+//     width:250px;
+//     height: 250px;
+//     background:$primary;
+//     border-radius:50%;
+//     -webkit-border-radius:50%;
+//     -moz-border-radius:50%;
+//     -ms-border-radius:50%;
+//     -o-border-radius:50%;
+// }
 }
 .nav-item{
     transform:translate3d(600px, 0, 0);
