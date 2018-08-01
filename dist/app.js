@@ -34,4 +34,15 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+
+
+
+// var count = 0;
+
+// $(".logo").click(function () {
+//     console.log("counter");
+//     count++;
+//     $("#counter").html("vistors: " + count);
+// });
+
 },{}]},{},[1]);
