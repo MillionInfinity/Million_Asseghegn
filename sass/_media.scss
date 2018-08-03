@@ -204,9 +204,22 @@ h1.abt{
         }
     }
 
-    .projects {
-        grid-template-columns: repeat(4, 1fr);
-    }
+   
+        .projects {
+            display: grid;
+            grid-gap: 0.7rem;
+            grid-template-columns: repeat(4, 1fr);
+            img {
+                width: 100%;
+                border: 3px #fff solid;
+                &:hover {
+                    opacity: 0.5;
+                    border-color: $secondary;
+                    @include easeOut;
+                }
+            }
+        }
+    
 }
   #main-footer {
       text-align: center !important;
@@ -218,12 +231,27 @@ h1.abt{
   
 // Desktops & Laptops
 @include mediaLg {
-
-
-
-    .projects {
-        grid-template-columns: repeat(3, 1fr);
-    }
+   .projects {
+            display: grid;
+            grid-gap: 0.7rem;
+            grid-template-columns: repeat(3, 1fr);
+            img {
+                width: 100%;
+                border: 3px #fff solid;
+                &:hover {
+                    opacity: 0.5;
+                    border-color: $secondary;
+                    @include easeOut;
+                }
+            }
+           }
+h1.h1-proj{
+    margin-bottom: 50px;
+}
+  h2.h2-proj{
+      position:absolute;
+      top: 150px;
+  }     
 body {
     @include background;
     background: $primary;
@@ -518,8 +546,12 @@ h1.abt {
            border-bottom: $primary 5px solid;
        }
     }
+    h2.h2-proj{
+        margin-bottom: 150px;
+    }
     h1.lg-heading{
         margin-top: 15px;
+     
     }
   main {
       align-items: center;
@@ -555,13 +587,25 @@ h1.abt {
     }
     
     .projects {
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-gap: 0.7rem;
+        grid-template-columns:1fr;
+        img {
+            width: 100%;
+            border: 3px #fff solid;
+            &:hover {
+                opacity: 0.5;
+                border-color: $secondary;
+                @include easeOut;
+            }
+        }
     }
 }
 
 // Smartphones
 
 @include mediaSm {
+    
 .bio-image{
     position:relative;
     top:180px;
@@ -591,18 +635,62 @@ h1.abt {
      main {
          background: rgba(lighten($preprimary, 2), 0.5);
          padding-bottom: 11rem;
+         margin-top:-1rem;
      }
     main#home h1 {
         margin-top: 44vh;
     }
-    .projects {
-        grid-template-columns: 1fr;
+         .projects {
+          display: grid;
+          grid-gap: 0.7rem;
+          grid-template-columns: repeat(2, 1fr);
+          img {
+              width: 100%;
+              border: 3px #fff solid;
+              &:hover {
+                  opacity: 0.5;
+                  border-color: $secondary;
+                  @include easeOut;
+              }
+          }
+   h1,
+   h2,
+   h3 {
+       margin: 0;
+       font-weight: 400;
+       &.h1-proj {
+           font-size: 3.8rem;
+           font-weight: 700;
+           color: white;
+       }
+       &.h2-proj{
+           color: white;
+           position: absolute;
+           left: 17%;
+           margin-bottom: 2rem;
+           padding: 0.2rem 1rem;
+           margin-bottom: 2rem; // padding: 0.2rem 1rem;
+           //    background: rgba(lighten($primary, 2), 0.7);
+       }
+   }
+        }    
+    h1.h1-proj{
+        padding-top: 115px;
+        margin-bottom: 75px;
+       }
+    .h2-proj {
+        position: absolute;
+        top: 190px;
+        right:95px;
+
     }
     h1.abt{
         position: absolute;
         top:70px;
         left:25%;
     }
+
+  
    h2.letme{
        position: absolute;
        top:150px;
@@ -613,7 +701,8 @@ h1.abt {
    h3 {
        margin: 0;
        font-weight: 400;
-       &.lg-heading {
+       &.lg-heading
+        {
            font-size: 3.8rem;
            font-weight: 700;
             color: white;
@@ -629,6 +718,7 @@ h1.abt {
         //    background: rgba(lighten($primary, 2), 0.7);
        }
    }
+
    .lg-heading{
        color:white;
    }
@@ -727,8 +817,10 @@ h1.abt {
     main{
          background: rgba(lighten($primary, 2), 0.7);
          padding-bottom: 11rem;
+         margin-top: -15px;
          
     }
+    img.item-p,
     main#home h1 {
         margin-top: 44vh;
         
@@ -736,10 +828,19 @@ h1.abt {
     .projects {
         grid-template-columns: 1fr;
     }
+    h1.h1-proj{
+        margin-bottom:150px;
+    }
+    h1.h1-proj,
     h1.abt{
         position:absolute;
         top:70px;
        left:15%;
+    }
+    h2.h2-proj{
+  position:absolute;
+  top:185px;
+  right:9%;
     }
     h2.letme{
           position:absolute;
