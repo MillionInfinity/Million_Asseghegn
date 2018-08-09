@@ -36,6 +36,7 @@ function toggleMenu() {
 }
 
 
+<<<<<<< HEAD
 var prt=document.getElementsByClassName('prt'),
     modal=document.getElementById('myModal'),
     modalImg=document.getElementById("img01");
@@ -47,3 +48,16 @@ var prt=document.getElementsByClassName('prt'),
        modalImg.alt = this.alt;
     
    };
+=======
+// var prt=document.getElementsByClassName('sk4'),
+    
+//     modal=document.getElementById('myModal'),
+//     modalImg=document.getElementById("img01");
+// //  console.log(prt);
+
+// prt.onclick=function(){
+//     modal.style.display = "block";
+//     modalImg.src = this.src;
+//     modalImg.alt = this.alt;
+// };
+>>>>>>> master
