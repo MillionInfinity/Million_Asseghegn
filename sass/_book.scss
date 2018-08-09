@@ -1,7 +1,9 @@
 @import "mixin.scss";
 @include mediaXl {
  body#bookbody {
-     
+     .sk {
+         margin-left: 17%;
+     }
           background: rgba(lighten($primary, 2), 0.2);
       
     // background:url('../img/2019.png');
@@ -70,12 +72,13 @@
            }
              .over-3 {
                  grid-area: r;
-                 margin-left: 10rem;
+                 margin-left: 13rem;
              }
 
              .concept-3 {
-                 margin-right: 10rem;
+                 margin-left: 13rem;
                  grid-area: s;
+                 margin-bottom: 10rem;
              }
      .overview {
         border-radius:5px;
@@ -110,6 +113,29 @@
 @include mediaLg {
      body#bookbody {
          background:rgba(lighten($primary, 2), 0.1);
+     }
+     .sketches {
+         display: grid;
+         grid-gap: 10px;
+         grid-template-areas: 
+         'lg'
+          'sm' 
+          'sk '
+          'sl';
+         .lg-sk {
+             grid-area: lg;
+         }
+         .sm-sk {
+             grid-area: sm;
+         }
+         .sk4 {
+            //  margin-left: 15%;
+             border-radius: 5px;
+             ;
+         }
+         .sk5 {
+             border-radius: 5px;
+         }
      }
 
     section#book {
@@ -214,7 +240,25 @@ section#book {
     }
  
 }
- 
+ .sketches {
+     display: grid;
+     grid-gap: 10px;
+     grid-template-areas: 'lg' 'sm' 'sk ' 'sl';
+     .lg-sk {
+         grid-area: lg;
+     }
+     .sm-sk {
+         grid-area: sm;
+     }
+     .sk4 {
+        //  margin-left: 15%;
+         border-radius: 5px;
+         ;
+     }
+     .sk5 {
+         border-radius: 5px;
+     }
+ }
 }
 
 @include mediaXsm {
@@ -284,3 +328,47 @@ section#book {
         }
         
   }
+ .sketches {
+     display:grid;
+     grid-gap: 10px;
+     grid-template-areas:
+     'lg lg'
+     'sm sm' 
+     'sk sl';
+     .lg-sk{
+         grid-area: lg;
+     }
+     .sm-sk{
+         grid-area: sm;
+
+     }
+     .sk4{
+         margin-left:15%;
+         border-radius: 5px;     ;
+        }
+    .sk5{
+        border-radius: 5px;
+    } 
+
+}
+ .modal-content {
+     position: absolute;
+     top: 15%;
+     left: 15%;
+     width: 60%;
+     border:solid 2px $secondary;
+   
+ }
+
+   span.close {
+       position: absolute;
+       top: 15%;
+       left: 72%;
+       z-index: 150;
+       zoom: 1.5;
+   }
+
+   .sk {
+            margin-left:30%;
+            border-radius: 5px;
+        }

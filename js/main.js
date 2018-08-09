@@ -1,4 +1,5 @@
 "use strict";
+// let $ = require('jquery');
 console.log('this is Million');
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
@@ -35,12 +36,14 @@ function toggleMenu() {
 }
 
 
-
-// var count = 0;
-
-// $(".logo").click(function () {
-//     console.log("counter");
-//     count++;
-//     $("#counter").html("vistors: " + count);
-// });
-
+var prt=document.getElementsByClassName('prt'),
+    modal=document.getElementById('myModal'),
+    modalImg=document.getElementById("img01");
+ 
+   $(".prt").click(function(){
+       console.log("sk clicked");
+       modal.style.display ="block";
+       modalImg.src = this.src;
+       modalImg.alt = this.alt;
+    
+   });
