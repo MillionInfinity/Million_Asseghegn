@@ -41,12 +41,12 @@ var prt=document.getElementsByClassName('prt'),
     modal=document.getElementById('myModal'),
     modalImg=document.getElementById("img01");
  
-   $(".prt").click(function(){
+   prt.onclick=function(){
        console.log("sk clicked");
        modal.style.display ="block";
        modalImg.src = this.src;
        modalImg.alt = this.alt;
     
-   });
+   };
 
 },{}]},{},[1]);
