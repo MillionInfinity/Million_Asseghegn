@@ -36,19 +36,7 @@ function toggleMenu() {
 }
 
 
-<<<<<<< HEAD
-var prt=document.getElementsByClassName('prt'),
-    modal=document.getElementById('myModal'),
-    modalImg=document.getElementById("img01");
- 
-   prt.onclick=function(){
-       console.log("sk clicked");
-       modal.style.display ="block";
-       modalImg.src = this.src;
-       modalImg.alt = this.alt;
-    
-   };
-=======
+
 // var prt=document.getElementsByClassName('sk4'),
     
 //     modal=document.getElementById('myModal'),
@@ -60,4 +48,4 @@ var prt=document.getElementsByClassName('prt'),
 //     modalImg.src = this.src;
 //     modalImg.alt = this.alt;
 // };
->>>>>>> master
+
