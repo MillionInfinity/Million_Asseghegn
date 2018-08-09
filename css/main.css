@@ -127,12 +127,14 @@ header {
 #counter {
   color: white; }
 
+.overview,
 .boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem; }
+  .overview div,
   .boxes div {
     font-size: 2rem;
     border: 3px #fff solid;
@@ -143,12 +145,11 @@ header {
     -moz-transition: all 1.5s ease-out;
     -ms-transition: all 1.5s ease-out;
     -o-transition: all 1.5s ease-out; }
+    .overview div:hover,
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
       background: #eece1a;
       color: #404040; }
-      .boxes div:hover span {
-        color: #404040; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -178,6 +179,11 @@ header {
   .prf {
     background: #8a8787; }
 
+  .contact-b {
+    background: rgba(143, 140, 140, 0.1);
+    position: relative;
+    top: 80%; }
+
   body {
     color: #404040;
     height: 100%;
@@ -187,6 +193,19 @@ header {
       background: url("../img/123.png");
       background-attachment: fixed;
       background-size: cover; }
+    body #main-footer {
+      text-align: center;
+      padding: 1rem;
+      background: #706e6e;
+      color: #404040;
+      height: 60px; }
+
+  h1.h1-cont {
+    margin-bottom: 150px; }
+
+  h2.h2-cont {
+    position: absolute;
+    top: 120px; }
 
   h1,
   h2,
@@ -368,13 +387,6 @@ header {
         -moz-transition: all 1.5s ease-out;
         -ms-transition: all 1.5s ease-out;
         -o-transition: all 1.5s ease-out; } }
-#main-footer {
-  text-align: center !important;
-  padding: 1rem;
-  background: #706e6e;
-  color: #404040;
-  height: 60px; }
-
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     display: grid;
@@ -391,6 +403,13 @@ header {
         -moz-transition: all 1.5s ease-out;
         -ms-transition: all 1.5s ease-out;
         -o-transition: all 1.5s ease-out; }
+
+  h1.h1-cont {
+    margin-bottom: 180px; }
+
+  h2.h2-cont {
+    position: absolute;
+    top: 160px; }
 
   h1.h1-proj {
     margin-bottom: 50px; }
@@ -649,6 +668,13 @@ header {
   h1.lg-heading {
     margin-top: 15px; }
 
+  #main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: #706e6e;
+    color: #404040;
+    height: 60px; }
+
   main {
     align-items: center;
     text-align: center; }
@@ -705,7 +731,7 @@ header {
     position: absolute;
     z-index: 3;
     right: 25px;
-    top: 25px;
+    top: 30px;
     cursor: pointer;
     transition: all 1.5s ease-out;
     -webkit-transition: all 1.5s ease-out;
@@ -719,7 +745,42 @@ header {
       -ms-transform: rotate(360deg);
       -o-transform: rotate(360deg);
       right: 9.5vw;
-      top: 0.3vh; }
+      top: 1vh; }
+
+  .boxes {
+    position: absolute;
+    top: 280px;
+    left: 15%; }
+    .boxes div {
+      font-size: 2rem;
+      border: 3px #fff solid;
+      padding: 1.5rem 2.5rem;
+      margin-bottom: 3rem;
+      transition: all 1.5s ease-out;
+      -webkit-transition: all 1.5s ease-out;
+      -moz-transition: all 1.5s ease-out;
+      -ms-transition: all 1.5s ease-out;
+      -o-transition: all 1.5s ease-out; }
+      .boxes div:hover {
+        padding: 0.5rem 1.5rem;
+        background: #eece1a;
+        color: #404040; }
+        .boxes div:hover span {
+          color: #404040; }
+
+  #contact {
+    height: 900px; }
+
+  h1.h1-cont {
+    position: absolute;
+    top: 150px;
+    left: 25%;
+    margin-bottom: 180px; }
+
+  h2.h2-cont {
+    position: absolute;
+    top: 230px;
+    right: 60px; }
 
   main {
     background: rgba(168, 165, 165, 0.5);
@@ -867,6 +928,36 @@ header {
         -o-transform-origin: top right;
         transform-origin: top right; } }
 @media screen and (max-width: 500px) {
+  .boxes {
+    position: absolute;
+    top: 355px;
+    left: 8%; }
+    .boxes div {
+      font-size: 1.2rem;
+      border: 3px #fff solid;
+      padding: 1.5rem 2.5rem;
+      margin-bottom: 3rem;
+      transition: all 1.5s ease-out;
+      -webkit-transition: all 1.5s ease-out;
+      -moz-transition: all 1.5s ease-out;
+      -ms-transition: all 1.5s ease-out;
+      -o-transition: all 1.5s ease-out; }
+      .boxes div:hover {
+        padding: 0.5rem 1.5rem;
+        background: #eece1a;
+        color: #404040; }
+
+  h1.h1-cont {
+    position: absolute;
+    top: 150px;
+    left: 18%;
+    margin-bottom: 180px; }
+
+  h2.h2-cont {
+    position: absolute;
+    top: 230px;
+    right: 15px; }
+
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
@@ -890,8 +981,9 @@ header {
       -o-transform: rotate(360deg);
       right: 8.5vw;
       top: 0vh; }
-    .menu-btn.logo {
-      width: -px !important; }
+
+  #contact {
+    padding-top: 900px; }
 
   main {
     background: rgba(143, 140, 140, 0.7);
@@ -1016,5 +1108,195 @@ header {
         -moz-transform-origin: top right;
         -o-transform-origin: top right;
         transform-origin: top right; } }
+@media screen and (min-width: 1171px) {
+  body#bookbody {
+    background: rgba(143, 140, 140, 0.2);
+    margin: 0;
+    background-repeat: no-repeat; }
+    body#bookbody section#book {
+      display: grid;
+      grid-gap: 15%;
+      grid-template-columns: 600px 1fr; }
+      body#bookbody section#book .bookimg img {
+        width: 550px;
+        margin-top: 15vh;
+        margin-left: 5vw; }
+      body#bookbody section#book .lg-bookh1 {
+        margin-top: 45vh;
+        color: #8a8787;
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-transform: uppercase; }
+      body#bookbody section#book .sm-bookh6 {
+        margin-bottom: 1.5rem;
+        font-style: italic;
+        padding: 0.2rem 0rem;
+        color: #a3a0a0;
+        line-height: 2.5; }
+    body#bookbody .secover {
+      display: grid;
+      grid-gap: 10px;
+      grid-auto-columns: repeat(2, 1fr);
+      grid-template-areas: 'k l' 'm n' 'o p' 'r r' 's s'; }
+      body#bookbody .secover .over {
+        grid-area: k;
+        margin-left: 10rem; }
+      body#bookbody .secover .concept {
+        margin-right: 10rem;
+        grid-area: l; }
+      body#bookbody .secover .over-1 {
+        grid-area: m;
+        margin-left: 10rem; }
+      body#bookbody .secover .concept-1 {
+        margin-right: 10rem;
+        grid-area: n; }
+      body#bookbody .secover .over-2 {
+        grid-area: o;
+        margin-left: 10rem; }
+      body#bookbody .secover .concept-2 {
+        margin-right: 10rem;
+        grid-area: p; }
+      body#bookbody .secover .over-3 {
+        grid-area: r;
+        margin-left: 10rem; }
+      body#bookbody .secover .concept-3 {
+        margin-right: 10rem;
+        grid-area: s; }
+      body#bookbody .secover .overview {
+        border-radius: 5px;
+        padding: 1.5rem 2.5rem;
+        border: #eece1a 1px solid;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 1rem; }
+        body#bookbody .secover .overview:hover {
+          padding: 0.5rem 1.5rem;
+          color: white; }
+      body#bookbody .secover .feature {
+        display: absolute;
+        right: -5px; } }
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  body#bookbody {
+    background: rgba(143, 140, 140, 0.1); }
+
+  section#book {
+    display: grid;
+    grid-gap: 15%; }
+    section#book .bookimg img {
+      width: 75%;
+      margin-top: 10vh;
+      margin-left: 13%; }
+    section#book .booktext {
+      margin-left: 25%; }
+      section#book .booktext .lg-bookh1 {
+        color: white;
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-transform: uppercase; }
+      section#book .booktext .sm-bookh6 {
+        margin-left: -10%;
+        margin-bottom: 1.5rem;
+        font-style: italic;
+        padding: 0.2rem 0rem;
+        color: #eece1a;
+        line-height: 2.5; }
+    section#book .secover {
+      display: grid;
+      grid-gap: 10px;
+      grid-auto-columns: repeat(2, 1fr);
+      grid-template-areas: 'k l' 'k l'; }
+      section#book .secover .over {
+        grid-area: k;
+        margin-left: 10rem; }
+      section#book .secover .concept {
+        margin-right: 10rem;
+        grid-area: l; }
+
+  .overview {
+    width: 80%;
+    border-radius: 5px;
+    padding: 1.5rem 2.5rem;
+    border: #eece1a 1.5px solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 5rem; } }
+@media screen and (max-width: 768px) {
+  section#book {
+    background: white;
+    display: grid;
+    grid-gap: 15%; }
+    section#book .bookimg img {
+      width: 450px;
+      margin-top: 15vh;
+      margin-left: 25%; }
+    section#book .booktext {
+      margin-left: 25%; }
+      section#book .booktext .lg-bookh1 {
+        color: #8a8787;
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-transform: uppercase; }
+      section#book .booktext .sm-bookh6 {
+        margin-right: 5px;
+        margin-left: -10%;
+        margin-bottom: 1.5rem;
+        font-style: italic;
+        padding: 0.2rem 0rem;
+        color: #8a8787;
+        line-height: 2.5; } }
+@media screen and (max-width: 500px) {
+  body#bookbody {
+    background: #8a8787;
+    margin: 0;
+    background-repeat: no-repeat; }
+    body#bookbody section#book {
+      display: grid;
+      grid-gap: 15%; }
+      body#bookbody section#book .bookimg img {
+        width: 240px;
+        margin-top: 15vh;
+        margin-left: 25%; }
+      body#bookbody section#book .booktext {
+        margin-left: 20%; }
+        body#bookbody section#book .booktext .lg-bookh1 {
+          color: #8a8787;
+          font-size: 2.5rem;
+          font-weight: 700;
+          text-transform: uppercase; }
+        body#bookbody section#book .booktext .sm-bookh6 {
+          margin-left: -10%;
+          margin-right: 5px;
+          margin-bottom: 1.5rem;
+          font-style: italic;
+          padding: 0.2rem 0rem;
+          color: #a3a0a0;
+          line-height: 2.5; }
+    body#bookbody .overview {
+      margin-left: 10%; } }
+.overviews {
+  width: 80%;
+  background: white;
+  border-radius: 5px;
+  padding: 1.5rem 2.5rem;
+  color: #a3a0a0;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  transition: all 1.5s ease-out;
+  -webkit-transition: all 1.5s ease-out;
+  -moz-transition: all 1.5s ease-out;
+  -ms-transition: all 1.5s ease-out;
+  -o-transition: all 1.5s ease-out; }
+  .overviews:hover {
+    color: white;
+    background: #a3a0a0; }
+  .overviews h3,
+  .overviews h4,
+  .overviews h5,
+  .overviews h6 {
+    line-height: 1.5; }
 
 /*# sourceMappingURL=main.css.map */

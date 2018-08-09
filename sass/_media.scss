@@ -4,14 +4,36 @@
     .prf{
         background: $primary;
     }
+   .contact-b {
+      background: rgba(lighten($primary, 2), 0.1);
+        position: relative;
+        top: 80%;
+    }
 body {
     @include background; // color:$primary;
     color: set-text-color($preprimary);
     height: 100%;
     margin: 0;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    #main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken($primary, 10);
+    color: set-text-color($primary);
+    height: 60px;
+   
 }
 
+
+}
+h1.h1-cont{
+   margin-bottom:150px;  
+}
+h2.h2-cont{
+    position: absolute;
+    top:120px;
+}
 h1,
 h2,
 h3 {
@@ -196,8 +218,6 @@ h1.abt{
                  }
         }
         .job {
-            // border:1px solid $preprimary;
-            // background:rgba(lighten($primary, 2), 0.1);
             background:white;
             padding: 0.5rem;
             border-bottom: $secondary 5px solid;
@@ -221,14 +241,7 @@ h1.abt{
         }
     
 }
-  #main-footer {
-      text-align: center !important;
-      padding: 1rem;
-      background: darken($primary, 10);
-      color:set-text-color($primary);
-      height: 60px;
-  }
-  
+
 // Desktops & Laptops
 @include mediaLg {
    .projects {
@@ -245,6 +258,15 @@ h1.abt{
                 }
             }
            }
+
+ h1.h1-cont {
+     margin-bottom: 180px;
+ }
+
+ h2.h2-cont {
+     position: absolute;
+     top: 160px;
+ }
 h1.h1-proj{
     margin-bottom: 50px;
 }
@@ -307,7 +329,8 @@ header {
 }
 
 main {
-    padding: 4rem; // height: 100%;
+    padding: 4rem; 
+    // height: 100%;
     min-height: calc(100vh - 60px);
     .icons {
         margin-top: 4.8rem;
@@ -553,6 +576,14 @@ h1.abt {
         margin-top: 15px;
      
     }
+      #main-footer {
+          text-align: center;
+          padding: 1rem;
+          background: darken($primary, 10);
+          color: set-text-color($primary);
+          height: 60px;
+      }
+
   main {
       align-items: center;
       text-align: center;
@@ -618,7 +649,7 @@ h1.abt {
     position: absolute;
     z-index: 3;
     right: 25px;
-    top: 25px;
+    top: 30px;
     cursor: pointer;
     @include easeOut;
     &.close {
@@ -629,8 +660,44 @@ h1.abt {
         -ms-transform: rotate( 360deg);
         -o-transform: rotate( 360deg);
         right: 9.5vw;
-        top: 0.3vh;
+        top: 1vh;
           }
+  }
+  .boxes {
+    position: absolute;
+    top:280px;
+    left:15%;
+      div {
+          font-size: 2rem;
+          border: 3px #fff solid;
+          padding: 1.5rem 2.5rem;
+          margin-bottom: 3rem;
+          @include easeOut;
+          &:hover {
+              padding: 0.5rem 1.5rem;
+              background: $secondary;
+              color: set-text-color($secondary);
+              span {
+                  color: set-text-color($secondary);
+              }
+          }
+      }
+  }
+  #contact{
+      height: 900px;
+  }
+  h1.h1-cont {
+    //   margin-top:150px;
+    position:absolute;
+    top:150px;
+    left:25%;
+    margin-bottom: 180px;
+  }
+
+  h2.h2-cont {
+      position: absolute;
+      top: 230px;
+      right:60px;
   }
      main {
          background: rgba(lighten($preprimary, 2), 0.5);
@@ -780,7 +847,44 @@ h1.abt {
       }
     
 }
+
 @include mediaXsm {
+ 
+.boxes{
+    position: absolute;
+    top:355px;
+    left: 8%;
+    // width:5%;
+    // right:1%;
+    & div {
+        
+        font-size: 1.2rem;
+        border: 3px #fff solid;
+        padding: 1.5rem 2.5rem;
+        margin-bottom: 3rem;
+        @include easeOut;
+        &:hover {
+            padding: 0.5rem 1.5rem;
+            background: $secondary;
+            color: set-text-color($secondary); // span {
+            //     color: set-text-color($secondary);
+            // }
+        }
+    }
+}
+h1.h1-cont {
+    //   margin-top:150px;
+    position: absolute;
+    top: 150px;
+    left: 18%;
+    margin-bottom: 180px;
+}
+
+h2.h2-cont {
+    position: absolute;
+    top: 230px;
+    right: 15px;
+}
   .about-info {
     grid-template-areas:
       'bioimage'
@@ -806,19 +910,23 @@ h1.abt {
         -ms-transform: rotate( 360deg);
         -o-transform: rotate( 360deg);
         right: 8.5vw;
+        // width:5rem;
         top: 0vh;
     }
     &.logo {
-        width: -px !important;
+        // width: -px !important;
     }
 }
 
+#contact{
+padding-top: 900px;
 
+}
     main{
          background: rgba(lighten($primary, 2), 0.7);
          padding-bottom: 11rem;
          margin-top: -15px;
-         
+      
     }
     img.item-p,
     main#home h1 {
