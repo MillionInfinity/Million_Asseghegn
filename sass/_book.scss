@@ -4,6 +4,12 @@
      .sk {
          margin-left: 17%;
      }
+     .procrime {
+          margin-left: -15%;
+          margin-top: 60px;
+          width: 800px;
+         border-radius: 5px;
+     }
           background: rgba(lighten($primary, 2), 0.2);
       
     // background:url('../img/2019.png');
@@ -39,7 +45,7 @@
         grid-gap: 10px;
         grid-auto-columns: repeat(2,1fr);
         grid-template-areas: 
-       'k l'
+         'k l'
          'm n'
          'o p'
          'r r'
@@ -113,7 +119,9 @@
 @include mediaLg {
      body#bookbody {
          background:rgba(lighten($primary, 2), 0.1);
+       
      }
+      
      .sketches {
          display: grid;
          grid-gap: 10px;
@@ -128,8 +136,19 @@
          .sm-sk {
              grid-area: sm;
          }
+         .procrime {
+            //  margin-left: -15%;
+               border-radius: 5px;
+         }
+          .procrime {
+             
+              margin-left: -15%;
+              margin-top: 60px;
+              width: 400px;
+              border-radius: 5px;
+          }
          .sk4 {
-            //  margin-left: 15%;
+            
              border-radius: 5px;
              ;
          }
@@ -152,10 +171,14 @@
         .lg-bookh1 {
             // margin-top: 45vh;
             
-            color: white;
+            color: $preprimary;
             font-size: 3.5rem;
             font-weight: 700;
             text-transform: uppercase;
+        }
+        .sm-crime6{
+           color: $secondary;
+           margin-left:-3%;
         }
         .sm-bookh6 {
              margin-left:-10%;
@@ -211,7 +234,7 @@
 }
 @include mediaMd {
 section#book {
-      background:white;
+      background:$preprimary;
     display: grid;
     grid-gap: 15%; // grid-template-columns: 600px 1fr;
     .bookimg img {
@@ -227,6 +250,11 @@ section#book {
             font-size: 3.5rem;
             font-weight: 700;
             text-transform: uppercase;
+        }
+        .sm-crime6 {
+            color: $secondary;
+            margin-left: -15%;
+            text-justify: auto;
         }
         .sm-bookh6 {
             margin-right: 5px;
@@ -253,7 +281,14 @@ section#book {
      .sk4 {
         //  margin-left: 15%;
          border-radius: 5px;
-         ;
+         
+     }
+     .procrime {
+         
+         margin-left: -15%;
+         margin-top: 100px;
+         width: 400px;
+         border-radius: 5px;
      }
      .sk5 {
          border-radius: 5px;
@@ -284,6 +319,10 @@ section#book {
                 font-size: 2.5rem;
                 font-weight: 700;
                 text-transform: uppercase;
+            }
+            .sm-crime6 {
+                color: $secondary;
+                margin-left: -3%;
             }
             .sm-bookh6 {
                 margin-left: -10%;
