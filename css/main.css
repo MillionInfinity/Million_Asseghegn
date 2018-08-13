@@ -175,6 +175,9 @@ header {
   color: #404040;
   height: 60px; }
 
+.app {
+  color: #eece1a; }
+
 @media screen and (min-width: 1171px) {
   .prf {
     background: #8a8787; }
@@ -1115,6 +1118,11 @@ header {
     background-repeat: no-repeat; }
     body#bookbody .sk {
       margin-left: 17%; }
+    body#bookbody .procrime {
+      margin-left: -15%;
+      margin-top: 60px;
+      width: 800px;
+      border-radius: 5px; }
     body#bookbody section#book {
       display: grid;
       grid-gap: 15%;
@@ -1192,6 +1200,13 @@ header {
       grid-area: lg; }
     .sketches .sm-sk {
       grid-area: sm; }
+    .sketches .procrime {
+      border-radius: 5px; }
+    .sketches .procrime {
+      margin-left: -15%;
+      margin-top: 60px;
+      width: 400px;
+      border-radius: 5px; }
     .sketches .sk4 {
       border-radius: 5px; }
     .sketches .sk5 {
@@ -1207,10 +1222,13 @@ header {
     section#book .booktext {
       margin-left: 25%; }
       section#book .booktext .lg-bookh1 {
-        color: white;
+        color: #a3a0a0;
         font-size: 3.5rem;
         font-weight: 700;
         text-transform: uppercase; }
+      section#book .booktext .sm-crime6 {
+        color: #eece1a;
+        margin-left: -3%; }
       section#book .booktext .sm-bookh6 {
         margin-left: -10%;
         margin-bottom: 1.5rem;
@@ -1242,7 +1260,7 @@ header {
     margin-left: 5rem; } }
 @media screen and (max-width: 768px) {
   section#book {
-    background: white;
+    background: #a3a0a0;
     display: grid;
     grid-gap: 15%; }
     section#book .bookimg img {
@@ -1256,6 +1274,10 @@ header {
         font-size: 3.5rem;
         font-weight: 700;
         text-transform: uppercase; }
+      section#book .booktext .sm-crime6 {
+        color: #eece1a;
+        margin-left: -15%;
+        text-justify: auto; }
       section#book .booktext .sm-bookh6 {
         margin-right: 5px;
         margin-left: -10%;
@@ -1274,6 +1296,11 @@ header {
     .sketches .sm-sk {
       grid-area: sm; }
     .sketches .sk4 {
+      border-radius: 5px; }
+    .sketches .procrime {
+      margin-left: -15%;
+      margin-top: 100px;
+      width: 400px;
       border-radius: 5px; }
     .sketches .sk5 {
       border-radius: 5px; } }
@@ -1296,6 +1323,9 @@ header {
           font-size: 2.5rem;
           font-weight: 700;
           text-transform: uppercase; }
+        body#bookbody section#book .booktext .sm-crime6 {
+          color: #eece1a;
+          margin-left: -3%; }
         body#bookbody section#book .booktext .sm-bookh6 {
           margin-left: -10%;
           margin-right: 5px;
