@@ -35,26 +35,14 @@ function toggleMenu() {
 }
 
 
-<<<<<<< HEAD
 // var prt=document.getElementsByClassName('prt'),
     
 //     modal=document.getElementById('myModal'),
 //     modalImg=document.getElementById("img01");
 // //  console.log(prt);
-=======
-let prt=document.getElementsByClassName('prt'),
-    
-    modal=document.getElementById('myModal'),
-    modalImg=document.getElementById("img01");
-//  console.log(prt);
->>>>>>> df8ffeae97ac7815c1833a1340851ae4f0d2f51a
 
 // $(".prt").click(function(){
 //     modal.style.display = "block";
 //     modalImg.src = this.src;
 //     modalImg.alt = this.alt;
-<<<<<<< HEAD
 // });
-=======
-// });
->>>>>>> df8ffeae97ac7815c1833a1340851ae4f0d2f51a
