@@ -36,44 +36,16 @@ function toggleMenu() {
 }
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-// var prt=document.getElementsByClassName('sk4'),
+// var prt=document.getElementsByClassName('prt'),
     
 //     modal=document.getElementById('myModal'),
 //     modalImg=document.getElementById("img01");
 // //  console.log(prt);
 
-// prt.onclick=function(){
-//     modal.style.display = "block";
-//     modalImg.src = this.src;
-//     modalImg.alt = this.alt;
-// };
-
-
-=======
-var prt=document.getElementsByClassName('prt'),
-=======
-let prt=document.getElementsByClassName('prt'),
->>>>>>> df8ffeae97ac7815c1833a1340851ae4f0d2f51a
-    
-    modal=document.getElementById('myModal'),
-    modalImg=document.getElementById("img01");
-//  console.log(prt);
-
-<<<<<<< HEAD
-$(".prt").click(function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    modalImg.alt = this.alt;
-});
->>>>>>> master
-=======
 // $(".prt").click(function(){
 //     modal.style.display = "block";
 //     modalImg.src = this.src;
 //     modalImg.alt = this.alt;
 // });
->>>>>>> df8ffeae97ac7815c1833a1340851ae4f0d2f51a
+
 },{}]},{},[1]);
