@@ -36,14 +36,14 @@ function toggleMenu() {
 }
 
 
-var prt=document.getElementsByClassName('prt'),
+// var prt=document.getElementsByClassName('prt'),
     
-    modal=document.getElementById('myModal'),
-    modalImg=document.getElementById("img01");
-//  console.log(prt);
+//     modal=document.getElementById('myModal'),
+//     modalImg=document.getElementById("img01");
+// //  console.log(prt);
 
-$(".prt").click(function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    modalImg.alt = this.alt;
-});
+// $(".prt").click(function(){
+//     modal.style.display = "block";
+//     modalImg.src = this.src;
+//     modalImg.alt = this.alt;
+// });
